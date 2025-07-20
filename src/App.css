@@ -1,0 +1,49 @@
+
+.header-row {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 2rem;
+  /* Use a reasonable gap */
+  padding: 1rem;
+}
+
+.profile {
+  position: static;
+  /* Remove absolute positioning for responsiveness */
+  max-width: 120px;
+  width: 20vw;
+}
+
+.profile img {
+  width: 100%;
+  height: auto;
+  border-radius: 16px;
+}
+
+.title {
+  flex: 1;
+  min-width: 0;
+}
+
+.subtitle {
+  color: rgb(166, 166, 166);
+}
+
+@media (max-width: 600px) {
+  .header-row {
+    flex-direction: column;
+    align-items: center;
+    gap: 1rem;
+  }
+
+  .profile {
+    width: 50vw;
+    max-width: 200px;
+  }
+
+  .title h1,
+  .title .subtitle {
+    font-size: 1.2rem;
+  }
+}
