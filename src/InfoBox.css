@@ -1,0 +1,32 @@
+.info-box {
+  background: #f0f0f0;
+  border-radius: 1.5rem;
+  padding: 1.2rem;
+  color: #222;
+  box-shadow: 0 3px 10px rgba(0,0,0,0.15);
+  font-size: 1rem;
+  transition: box-shadow 0.2s;
+  word-break: break-word;
+}
+
+.info-box-header {
+  font-size: 1.1rem;
+  margin-bottom: 0.5rem;
+  color: #959595;
+  letter-spacing: 0.02em;
+}
+
+.info-box.small {
+  max-width: 250px;
+  min-width: 180px;
+}
+
+.info-box.medium {
+  max-width: 350px;
+  min-width: 220px;
+}
+
+.info-box.large {
+  max-width: 500px;
+  min-width: 260px;
+}
