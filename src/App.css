@@ -1,15 +1,20 @@
 @font-face {
   font-family: 'GeneralSans-Variable';
   src: url('./assets/GeneralSans-Variable.ttf') format('truetype');
-  font-weight: lighter;
-  font-style: lighter;
+}
+
+body, #root {
+  font-family: 'GeneralSans-Variable', sans-serif;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
 }
 
 .header-row {
-  font-family: 'GeneralSans-Variable', sans-serif;
   display: flex;
   align-items: flex-start;
   padding: 1rem;
+  font-weight: normal;
 }
 
 .left-col {
@@ -17,6 +22,10 @@
   min-width: 0;
   display: flex;
   flex-direction: column;
+}
+
+.app-content {
+  flex: 1;
 }
 
 .profile {
@@ -37,6 +46,11 @@
 
 .subtitle {
   color: rgb(240, 61, 172);
+}
+
+h1,
+.subtitle{
+  font-weight: 300;
 }
 
 @media (max-width: 900px) {
@@ -67,4 +81,11 @@
   .title .subtitle {
     font-size: 1.5rem;
   }
+}
+
+.title-underline {
+  height: 1.5px;
+  background: rgb(225, 222, 223);
+  width: 67%;
+  border-radius: 2px;
 }

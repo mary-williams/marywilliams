@@ -1,0 +1,25 @@
+/* Add to App.css or a global CSS file */
+.footer {
+    width: 100%;
+    text-align: center;
+    padding: 1.2rem 0 1rem 0;
+    background: #f0f0f0;
+    color: #333;
+    font-size: 1rem;
+    margin-top: 3;
+    border-top: 1px solid #e5e5e5;
+}
+
+.footer a {
+    color: rgb(240, 61, 172);
+    text-decoration: none;
+    margin: 0 0.5rem;
+    font-weight: 500;
+}
+
+.footer a:hover {
+    text-decoration: underline;
+    color: #c92a8f;
+}
+
+

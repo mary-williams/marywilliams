@@ -7,7 +7,7 @@
   justify-content: center;
   align-items: flex-start;
   gap: 3rem;
-  box-sizing: border-box; /* Add this for consistent sizing */
+  box-sizing: border-box; 
 }
 
 .contact-left,
@@ -40,7 +40,7 @@
   border-radius: 2rem;
   padding: 0.5rem 1.5rem;
   font-size: 1rem;
-  font-weight: 600;
+  font-weight: 500;
   cursor: pointer;
   transition: background 0.2s;
 }
@@ -76,12 +76,12 @@
 
 /* Contact Form */
 .contact-form {
-  background: #faf7fa;
+  background: #f9f9f9;
   border-radius: 1rem;
   padding: 2rem 1.5rem;
-  box-shadow: 0 2px 12px rgba(240, 61, 172, 0.07);
   display: flex;
   flex-direction: column;
+  box-shadow: 5px 5px 6px rgba(50, 48, 49, 0.07);
   gap: 1rem;
   width: 100%;
   max-width: 350px;
@@ -112,7 +112,7 @@
   border-radius: 1.5rem;
   padding: 0.6rem 1.2rem;
   font-size: 1rem;
-  font-weight: 600;
+  font-weight: 550;
   cursor: pointer;
   margin-top: 0.5rem;
   transition: background 0.2s;

@@ -12,11 +12,12 @@ function Navbar() {
           '--bs-nav-link-color': 'black',
           '--bs-nav-pills-link-active-color': 'white',
           '--bs-nav-pills-link-active-bg': 'rgb(240, 61, 172)',
-          background: '#f0f0f0',
+          background: 'white',
           display: 'inline-flex', 
           justifyContent: 'center',
           margin: '1rem auto',
           minWidth: '300px',
+          boxShadow: '0 2px 12px rgba(114, 109, 109, 0.49)'
         }}
       >
         <li className="nav-item" role="presentation">

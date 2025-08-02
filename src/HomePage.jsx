@@ -10,7 +10,8 @@ function HomePage() {
   return (
     <div className="header-row">
       <div className="left-col">
-        <h1>Hi, I'm Mary <span className="subtitle">an aspiring Front End Developer</span></h1>
+        <h1>Hi, I'm Mary <span className="subtitle">an aspiring Software Developer</span></h1>
+        <div className= "title-underline"></div>
         <div className="info-boxes" style={{ display: 'flex', gap: '2rem', flexWrap: 'wrap', marginTop: '1rem' }}>
           <InfoBox size="small" header="Me">{aboutMe1}</InfoBox>
           <InfoBox size="medium" header="In the Future">{aboutMe3}</InfoBox>
