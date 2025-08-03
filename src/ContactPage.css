@@ -1,3 +1,4 @@
+/* Layout */
 .contact-container {
   width: 100%;
   max-width: 900px;
@@ -7,7 +8,7 @@
   justify-content: center;
   align-items: flex-start;
   gap: 3rem;
-  box-sizing: border-box; 
+  box-sizing: border-box;
 }
 
 .contact-left,
@@ -16,6 +17,7 @@
   min-width: 200px;
 }
 
+/* Title & Subtext */
 .title {
   text-align: center;
   margin-bottom: 1.5rem;
@@ -27,6 +29,7 @@
   margin-bottom: 2rem;
 }
 
+/* Email Button */
 .Email {
   display: flex;
   justify-content: center;
@@ -45,33 +48,13 @@
   transition: background 0.2s;
 }
 
-/* Social Buttons */
-.Socials {
+/* Info Boxes */
+.info-boxes {
   display: flex;
-  justify-content: center;
   gap: 2rem;
-  margin-top: 2rem;
-}
-
-.social-btn {
-  display: inline-flex;
-  align-items: center;
+  flex-wrap: wrap;
   justify-content: center;
-  background: #f0f0f0;
-  color: #222;
-  border-radius: 1.5rem;
-  padding: 0.5rem 1.2rem;
-  text-decoration: none;
-  font-weight: 600;
-  font-size: 1.5rem;
-  border: none;
-  transition: background 0.2s, color 0.2s;
-  margin: 0 0.5rem;
-}
-
-.social-btn:hover {
-  background: rgb(240, 61, 172);
-  color: #fff;
+  margin-top: 1rem;
 }
 
 /* Contact Form */
@@ -122,7 +105,8 @@
   background: #c92a8f;
 }
 
-@media (max-width: 200px) {
+/* Responsive */
+@media (max-width: 900px) {
   .contact-container {
     gap: 1.5rem;
     padding: 1rem 0.5rem 2rem 0.5rem;
@@ -142,16 +126,17 @@
   .contact-right {
     justify-content: center;
   }
-}
-
-@media (max-width: 700px) {
   .contact-form {
     width: 100%;
     max-width: 100%;
   }
-  .Email button,
-  .social-btn {
+  .Email button {
     width: 100%;
     justify-content: center;
+  }
+  .info-boxes {
+    flex-direction: column;
+    align-items: center;
+    gap: 1.5rem;
   }
 }

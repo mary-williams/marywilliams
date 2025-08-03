@@ -18,11 +18,15 @@ function HomePage() {
           <InfoBox size="medium" header="In the Future">{aboutMe3}</InfoBox>
           <InfoBox size="large" header='My "Why"'>{aboutMe4}</InfoBox>
           <MusicPlayer/>
-          <InfoBox size="medium" header="University Orgs">{aboutMe2}</InfoBox>
         </div>
       </div>
-      <div className="profile">
-        <img src={ProfileImg} alt="My Picture!" />
+      <div className= "right-col">
+        <div className="profile">
+          <img src={ProfileImg} alt="My Picture!" />
+        </div>
+        <div className='right-info-box' style={{marginTop: '1rem'}}>
+          <InfoBox size="medium" header="University Orgs">{aboutMe2}</InfoBox>
+        </div>
       </div>
     </div>
   )

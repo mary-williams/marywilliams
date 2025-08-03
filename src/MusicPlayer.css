@@ -1,10 +1,7 @@
 .music-player {
   /* Inherits .info-box styles */
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  gap: 1rem;
   width: 250px;
+  margin-top: 0px;
 }
 
 .music-track {
@@ -24,18 +21,19 @@
 .music-title {
   font-weight: 400;
   color: #282828;
+  margin-bottom: 0;
 }
 
 .music-artist{
     font-weight: 300;
     color: #282828;
+    margin-top: 0;
 }
 
 .music-controls {
   display: flex;
   gap: 1rem;
   justify-content: center;
-  margin-top: 0.5rem;
 }
 
 .music-controls button {
