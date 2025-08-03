@@ -1,5 +1,6 @@
 import ProfileImg from '/public/MARY3432.jpg'
 import InfoBox from './InfoBox.jsx'
+import MusicPlayer from './MusicPlayer.jsx'
 
 const aboutMe1 = "I currently attend the University of Texas at Austin as a Computer Science student. I have experience using Java, C, React.js, and Figma.";
 const aboutMe2 = "Women in CS (WiCS), Society for Advancing Gender Equality (SAGES).";
@@ -16,7 +17,8 @@ function HomePage() {
           <InfoBox size="small" header="Me">{aboutMe1}</InfoBox>
           <InfoBox size="medium" header="In the Future">{aboutMe3}</InfoBox>
           <InfoBox size="large" header='My "Why"'>{aboutMe4}</InfoBox>
-          <InfoBox size="small" header="University Orgs">{aboutMe2}</InfoBox>
+          <MusicPlayer/>
+          <InfoBox size="medium" header="University Orgs">{aboutMe2}</InfoBox>
         </div>
       </div>
       <div className="profile">

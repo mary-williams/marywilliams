@@ -6,13 +6,13 @@
   box-shadow: 0 3px 10px rgba(0,0,0,0.15);
   font-size: 1rem;
   word-break: break-word;
+  margin-top: 10px;
 }
 
 .info-box-header {
-  font-size: 1.1rem;
-  margin-bottom: 0.5rem;
+  font-size: 1.2rem;
   color: #959595;
-  letter-spacing: 0.02em;
+  letter-spacing: 0.02rem;
 }
 
 .info-box.small {

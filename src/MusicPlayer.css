@@ -1,0 +1,50 @@
+.music-player {
+  /* Inherits .info-box styles */
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 1rem;
+  width: 250px;
+}
+
+.music-track {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 0.5rem;
+}
+
+.music-album {
+  width: 200px;
+  height: 200px;
+  object-fit: cover;
+  box-shadow: 3px 3px 17px rgba(47, 46, 47, 0.07);
+}
+
+.music-title {
+  font-weight: 400;
+  color: #282828;
+}
+
+.music-artist{
+    font-weight: 300;
+    color: #282828;
+}
+
+.music-controls {
+  display: flex;
+  gap: 1rem;
+  justify-content: center;
+  margin-top: 0.5rem;
+}
+
+.music-controls button {
+  background: none;
+  border: none;
+  border-radius: 0;
+  padding: 0.5rem;
+  font-size: 1.2rem;
+  color: rgb(165, 165, 165); 
+  cursor: pointer;
+  transition: color 0.2s;
+}

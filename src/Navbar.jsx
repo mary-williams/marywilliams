@@ -1,5 +1,4 @@
 import { Link, useLocation } from 'react-router-dom'
-import './navbar.css'
 
 function Navbar() {
   const location = useLocation();
@@ -7,17 +6,17 @@ function Navbar() {
   return (
     <nav style={{ textAlign: 'center'}}>
       <ul
-        className="nav nav-pills gap-5 p-1 small rounded-5"
+        className="nav nav-pills nav-fill gap-2 p-1 medium rounded-5" id="pillNav2" role="tablist"
         style={{
-          '--bs-nav-link-color': 'black',
+          '--bs-nav-link-color': 'rgb(184, 182, 183)',
           '--bs-nav-pills-link-active-color': 'white',
           '--bs-nav-pills-link-active-bg': 'rgb(240, 61, 172)',
           background: 'white',
           display: 'inline-flex', 
           justifyContent: 'center',
           margin: '1rem auto',
-          minWidth: '300px',
-          boxShadow: '0 2px 12px rgba(114, 109, 109, 0.49)'
+          minWidth: '400px',
+          boxShadow: '0 2px 12px rgba(114, 109, 109, 0.49)',
         }}
       >
         <li className="nav-item" role="presentation">
@@ -26,7 +25,7 @@ function Navbar() {
             className={`nav-link rounded-5${location.pathname === '/' ? ' active' : ''}`}
             aria-current={location.pathname === '/' ? 'page' : undefined}
           >
-            Home
+            About
           </Link>
         </li>
         <li className="nav-item" role="presentation">
