@@ -1,12 +1,13 @@
 .info-box {
   background: #f9f9f9;
   border-radius: 1.5rem;
-  padding: 1.2rem;
+  padding: 1.0rem;
+  padding-top: 0.7rem;
+  padding-bottom: 0.7rem;
   color: #222;
   box-shadow: 0 3px 10px rgba(0,0,0,0.15);
   font-size: 1rem;
   word-break: break-word;
-  margin-top: 10px;
 }
 
 .info-box-header {
@@ -25,7 +26,12 @@
   min-width: 220px;
 }
 
+.info-box.grande {
+  max-width: 390px;
+  min-width: 220px;
+}
+
 .info-box.large {
-  max-width: 500px;
+  max-width: 450px;
   min-width: 260px;
 }

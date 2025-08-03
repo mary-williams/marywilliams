@@ -1,4 +1,3 @@
-/* Layout */
 .contact-container {
   width: 100%;
   max-width: 900px;
@@ -17,7 +16,6 @@
   min-width: 200px;
 }
 
-/* Title & Subtext */
 .title {
   text-align: center;
   margin-bottom: 1.5rem;
@@ -29,7 +27,6 @@
   margin-bottom: 2rem;
 }
 
-/* Email Button */
 .Email {
   display: flex;
   justify-content: center;
@@ -48,95 +45,10 @@
   transition: background 0.2s;
 }
 
-/* Info Boxes */
 .info-boxes {
   display: flex;
   gap: 2rem;
   flex-wrap: wrap;
   justify-content: center;
-  margin-top: 1rem;
-}
-
-/* Contact Form */
-.contact-form {
-  background: #f9f9f9;
-  border-radius: 1rem;
-  padding: 2rem 1.5rem;
-  display: flex;
-  flex-direction: column;
-  box-shadow: 5px 5px 6px rgba(50, 48, 49, 0.07);
-  gap: 1rem;
-  width: 100%;
-  max-width: 350px;
-}
-
-.contact-form label {
-  font-weight: 500;
-  color: #333;
-  display: flex;
-  flex-direction: column;
-  gap: 0.3rem;
-}
-
-.contact-form input,
-.contact-form textarea {
-  border: 1px solid #ddd;
-  border-radius: 0.5rem;
-  padding: 0.5rem;
-  font-size: 1rem;
-  margin-top: 0.2rem;
-  resize: vertical;
-}
-
-.contact-form button {
-  background: rgb(240, 61, 172);
-  color: #fff;
-  border: none;
-  border-radius: 1.5rem;
-  padding: 0.6rem 1.2rem;
-  font-size: 1rem;
-  font-weight: 550;
-  cursor: pointer;
-  margin-top: 0.5rem;
-  transition: background 0.2s;
-}
-
-.contact-form button:hover {
-  background: #c92a8f;
-}
-
-/* Responsive */
-@media (max-width: 900px) {
-  .contact-container {
-    gap: 1.5rem;
-    padding: 1rem 0.5rem 2rem 0.5rem;
-  }
-  .contact-form {
-    max-width: 100%;
-    padding: 1.2rem 0.5rem;
-  }
-}
-
-@media (max-width: 700px) {
-  .contact-container {
-    flex-direction: column;
-    align-items: stretch;
-    gap: 2rem;
-  }
-  .contact-right {
-    justify-content: center;
-  }
-  .contact-form {
-    width: 100%;
-    max-width: 100%;
-  }
-  .Email button {
-    width: 100%;
-    justify-content: center;
-  }
-  .info-boxes {
-    flex-direction: column;
-    align-items: center;
-    gap: 1.5rem;
-  }
+  margin-top: 2rem;
 }

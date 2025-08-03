@@ -1,0 +1,15 @@
+.photo-rotator {
+    width: 350px;
+  aspect-ratio: 1/1;
+  display: flex;
+  border-radius: 1rem;
+  overflow: hidden;
+  box-shadow: 0 2px 8px rgba(0,0,0,0.12);
+  background: #f9f9f9;
+}
+
+.rotating-photo {
+    width: 350px;
+  object-fit: cover;
+  border-radius: 1rem;
+}

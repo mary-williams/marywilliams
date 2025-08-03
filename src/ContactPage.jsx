@@ -31,7 +31,7 @@ function ContactPage() {
             marywilliams@utexas.edu
           </a>
         </div>
-        <div className="info-boxes" style={{ display: 'flex', gap: '2rem', flexWrap: 'wrap', marginTop: '1rem' }}>
+        <div className="info-boxes">
           <InfoBox size="medium">
             <a
               href="https://www.linkedin.com/in/mary-williams-383a6728b"
