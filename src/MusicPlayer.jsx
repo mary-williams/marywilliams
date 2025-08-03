@@ -19,6 +19,27 @@ function MusicPlayer() {
         album: "Willowbank",
         src: "/Yumi Zouma - Persephone.mp3",
         img: "/Persephone.jpeg"
+    },
+    {
+        title: "This is the Day",
+        artist: "The The",
+        album:"Soul Mining",
+        src:"/The The - This Is the Day.mp3",
+        img:"/The The-Soul Mining.jpeg"
+    },
+    {
+        title: "Don't Play No Game I Can't Win",
+        artist: "Beastie Boys",
+        album:"Hot Sauce Committee",
+        src:"/Beastie Boys - Don't Play no Game That I Can't Win.mp3",
+        img:"/Beastie-Boys-Hot-Sauce-Committee.jpeg"
+    },
+    {
+        title: "Now and Then",
+        artist: "Sjowgren",
+        album: "Single",
+        src:"/sjowgren - now & then.mp3",
+        img:"/now-and-then.jpeg"
     }
   ];
   const [current, setCurrent] = useState(0);

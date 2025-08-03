@@ -7,8 +7,8 @@ const aboutMe1 = "I currently attend the University of Texas at Austin as a Comp
 const aboutMe2 = (<> Women in CS (WiCS),<br /> Society for Advancing Gender Equality (SAGES).</>);
 const aboutMe3 = "After graduating, I aim to secure a role in a company where I can contribute to impactful projects, grow in a supportive, diverse community, and help shape the future of technology.";
 const aboutMe4 = "I’m driven by the desire to inspire future generations of creatives and lead positive change through technology. I’m passionate about the ethical responsibilities of developers and am pursuing a public policy certificate to ensure that technology is developed with integrity and social good in mind.";
-const aboutMe5 = "I like to spend my time reading, finding new music, coding (sometimes), exploring new hobbies, and getting outside";
-const aboutMe6 = "I like to spend my time reading, finding new music, coding (sometimes), exploring new hobbies, and getting outside kjfe erjfb erifhiwqjnci fuwqehrfcjsvjweriuv wivbwiuhviuewifjbrbverbvib ufvfrbviwbcvwr wuf wifwefhiewufhweijfer fugfieurfierufpiuergieru fir v";
+const aboutMe5 = "I like to spend my time reading, taking photos, finding new music, learning new things, exploring new hobbies, and getting outside";
+const aboutMe6 = "de kjfe erjfb erifhiwqjnci fuwqehrfcjsvjweriuv wivbwiuhviuewi de kjfe erjfb erifhiwqjnci fuwqehrfcjsvjweriuv wivbwiuhviuewi de kjfe erjfb erifhiwqjnci fuwqehrfcjsvjweriuv wivbwiuhviuewifjbrbverbvib ufvfrbviwbcvwr wuf wifwefhiewufhweijfer fugfieurfierufpiuergieru fir v";
 
 function HomePage() {
   return (
@@ -26,7 +26,7 @@ function HomePage() {
         <div className='bottom-row'>
           <Photos/>
           <MusicPlayer/>
-          <div style={{ display: 'flex', flexDirection: 'column', gap: '1rem' }}>
+          <div style={{ display: 'flex', flexDirection: 'column', gap: '2rem' }}>
             <InfoBox size="grande" header="University Orgs">{aboutMe2}</InfoBox>
             <InfoBox size="grande" header='Hobbies'>{aboutMe5}</InfoBox>
           </div>
