@@ -10,36 +10,36 @@ function MusicPlayer() {
         title: "In Undertow", 
         artist: "Alvvays",
         album: "Antisocialities",
-        src: "/Alvvays - In Undertow.mp3",
-        img: '/Alvvays.jpeg'
+        src: "/music/Alvvays - In Undertow.mp3",
+        img: '/albums/Alvvays.jpeg'
     },
     { 
         title: "Persephone", 
         artist: "Yumi Zouma",
         album: "Willowbank",
-        src: "/Yumi Zouma - Persephone.mp3",
-        img: "/Persephone.jpeg"
+        src: "/music/Yumi Zouma - Persephone.mp3",
+        img: "/albums/Persephone.jpeg"
     },
     {
         title: "This is the Day",
         artist: "The The",
         album:"Soul Mining",
-        src:"/The The - This Is the Day.mp3",
-        img:"/The The-Soul Mining.jpeg"
+        src:"/music/The The - This Is the Day.mp3",
+        img:"/albums/The The-Soul Mining.jpeg"
     },
     {
         title: "Don't Play No Game I Can't Win",
         artist: "Beastie Boys",
         album:"Hot Sauce Committee",
-        src:"/Beastie Boys - Don't Play no Game That I Can't Win.mp3",
-        img:"/Beastie-Boys-Hot-Sauce-Committee.jpeg"
+        src:"/music/Beastie Boys - Don't Play no Game That I Can't Win.mp3",
+        img:"/albums/Beastie-Boys-Hot-Sauce-Committee.jpeg"
     },
     {
         title: "Now and Then",
         artist: "Sjowgren",
         album: "Single",
-        src:"/sjowgren - now & then.mp3",
-        img:"/now-and-then.jpeg"
+        src:"/music/sjowgren - now & then.mp3",
+        img:"/albums/now-and-then.jpeg"
     }
   ];
   const [current, setCurrent] = useState(0);

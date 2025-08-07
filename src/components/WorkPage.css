@@ -1,0 +1,50 @@
+.work-container {
+  max-width: 900px;
+  margin: 2rem auto;
+  padding: 1rem;
+}
+
+.resume-section {
+  margin-bottom: 2rem;
+}
+
+.resume-section h3 {
+  color: rgb(240, 61, 172);
+  margin-bottom: 1rem;
+}
+
+.work-container 
+.info-box{
+  margin-bottom: 2rem;
+}
+
+.resume-title {
+  font-weight: 300;
+  font-size: 1.1rem;
+  margin-bottom: 0.2rem;
+}
+
+.resume-date {
+  font-size: 0.95rem;
+  color: #888;
+  margin-bottom: 0.5rem;
+}
+
+.resume-desc {
+  margin-bottom: 0.5rem;
+}
+
+.resume-tech {
+  display: flex;
+  gap: 0.5rem;
+  flex-wrap: wrap;
+  margin-bottom: 0.5rem;
+}
+
+.tech-tag {
+  background: #f0f0f0;
+  color: #333;
+  border-radius: 1rem;
+  padding: 0.2rem 0.8rem;
+  font-size: 0.9rem;
+}

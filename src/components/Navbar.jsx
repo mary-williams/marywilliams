@@ -34,7 +34,7 @@ function Navbar() {
             className={`nav-link rounded-5${location.pathname === '/work' ? ' active' : ''}`}
             aria-current={location.pathname === '/work' ? 'page' : undefined}
           >
-            Work
+            Resume
           </Link>
         </li>
         <li className="nav-item" role="presentation">

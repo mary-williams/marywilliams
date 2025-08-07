@@ -1,10 +1,10 @@
 import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
 import "./App.css";
-import WorkPage from "./WorkPage.jsx";
-import HomePage from "./HomePage.jsx";
-import ContactPage from "./ContactPage.jsx";
-import Navbar from "./Navbar.jsx";
-import Footer from "./Footer.jsx";
+import WorkPage from "./components/WorkPage.jsx";
+import HomePage from "./components/HomePage.jsx";
+import ContactPage from "./components/ContactPage.jsx";
+import Navbar from "./components/Navbar.jsx";
+import Footer from "./components/Footer.jsx";
 
 function App() {
   return (

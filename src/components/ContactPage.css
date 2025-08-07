@@ -27,14 +27,14 @@
   margin-bottom: 2rem;
 }
 
-.Email {
+.email {
   display: flex;
   justify-content: center;
   margin-bottom: 1rem;
 }
 
-.Email button {
-  background: #f0f0f0;
+.email-link {
+  background: #fcfcfc;
   color: rgb(240, 61, 172);
   border: none;
   border-radius: 2rem;
@@ -42,7 +42,13 @@
   font-size: 1rem;
   font-weight: 500;
   cursor: pointer;
+  text-decoration: none;
+  display: inline-block;
   transition: background 0.2s;
+}
+
+.email-link:hover {
+  background: #e5e5e5;
 }
 
 .info-boxes {
@@ -51,4 +57,18 @@
   flex-wrap: wrap;
   justify-content: center;
   margin-top: 2rem;
+}
+
+.contact-link {
+  text-decoration: none;
+  color: inherit;
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+  justify-content: space-between;
+  width: 100%;
+}
+
+.external-icon {
+  color: rgb(240, 61, 172);
 }

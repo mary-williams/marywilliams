@@ -2,12 +2,12 @@ import { useState, useEffect } from 'react';
 import './Photos.css'
 
 const images = [
-    'bevo.jpg',
-    'camera.jpg',
-    'coder.jpeg',
-    'coffee.jpg',
-    'concerts.JPG',
-    'reader.jpg',
+    '/about-images/bevo.jpg',
+    '/about-images/camera.jpg',
+    '/about-images/coder.jpeg',
+    '/about-images/coffee.jpg',
+    '/about-images/concerts.jpg',
+    '/about-images/reader.jpg',
 ];
 
 function Photos() {
