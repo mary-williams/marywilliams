@@ -1,6 +1,6 @@
 .music-player {
   /* Inherits .info-box styles */
-  width: 250px;
+  width: 225px;
   margin-top: 0px;
 }
 
@@ -12,9 +12,10 @@
 }
 
 .music-album {
-  width: 200px;
-  height: 200px;
+  width: 175px;
+  height: 175px;
   object-fit: cover;
+  margin-top: 10px;
   box-shadow: 3px 3px 17px rgba(47, 46, 47, 0.07);
 }
 

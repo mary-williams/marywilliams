@@ -6,7 +6,7 @@
   padding-bottom: 0.7rem;
   color: #222;
   box-shadow: 0 3px 10px rgba(0,0,0,0.15);
-  font-size: 1rem;
+  font-size: 17px;
   word-break: break-word;
 }
 
@@ -26,12 +26,12 @@
   min-width: 220px;
 }
 
-.info-box.grande {
-  max-width: 390px;
-  min-width: 220px;
-}
-
 .info-box.large {
   max-width: 450px;
   min-width: 260px;
+}
+
+.info-box.xlarge {
+  max-width: 460px;
+  min-width: 220px;
 }
