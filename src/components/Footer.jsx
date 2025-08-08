@@ -3,7 +3,7 @@ function Footer() {
   return (
     <footer className="footer">
       <div>
-        &copy; {new Date().getFullYear()} Mary Williams &mdash; Portfolio
+        &copy; {new Date().getFullYear()} Mary Williams
       </div>
       <div>
         <a href="mailto:marywilliams@utexas.edu">Contact</a>

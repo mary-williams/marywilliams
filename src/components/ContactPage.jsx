@@ -51,7 +51,7 @@ function ContactPage() {
               download
               className="contact-link"
             >
-              Resume
+              Download Resume
               <FiExternalLink className="external-icon" size={18} />
             </a>
           </InfoBox>

@@ -1,7 +1,8 @@
 .work-container {
   max-width: 900px;
   margin: 2rem auto;
-  padding: 1rem;
+    padding: 2.0rem;
+
 }
 
 .resume-section {
@@ -18,8 +19,23 @@
   margin-bottom: 2rem;
 }
 
+.projects-grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 2rem;
+}
+
+.project-link {
+  text-decoration: none;
+  color: inherit;
+  transition: box-shadow 0.2s, transform 0.2s;
+}
+.project-link:hover {
+  box-shadow: 0 4px 16px rgba(240, 61, 172, 0.15);
+  transform: translateY(-2px) scale(1.02);
+}
+
 .resume-title {
-  font-weight: 300;
   font-size: 1.1rem;
   margin-bottom: 0.2rem;
 }
@@ -31,6 +47,7 @@
 }
 
 .resume-desc {
+  font-weight: 300;
   margin-bottom: 0.5rem;
 }
 
