@@ -1,4 +1,3 @@
-import ProfileImg from "src/assets/profile.jpg";
 import InfoBox from "./InfoBox.jsx";
 import MusicPlayer from "./MusicPlayer.jsx";
 import Photos from "./Photos.jsx";
@@ -50,7 +49,7 @@ function HomePage() {
       </div>
       <div className="right-col">
         <div className="profile">
-          <img src={ProfileImg} alt="My Picture!" />
+          <img src="public/profile.jpg" alt="My Picture!"/>
         </div>
         <div style={{ marginTop: "2rem" }}>
           <InfoBox size="large" header="Other">
