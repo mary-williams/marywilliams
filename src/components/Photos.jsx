@@ -1,13 +1,13 @@
-import { useState, useEffect } from 'react';
-import './Photos.css'
+import { useState, useEffect } from "react";
+import "./Photos.css";
 
 const images = [
-    '/about-images/bevo.jpg',
-    '/about-images/camera.jpg',
-    '/about-images/coder.jpeg',
-    '/about-images/coffee.jpg',
-    '/about-images/concerts.JPG',
-    '/about-images/reader.jpg',
+  "/about-images/bevo.jpg",
+  "/about-images/camera.jpg",
+  "/about-images/coder.jpeg",
+  "/about-images/coffee.jpg",
+  "/about-images/concerts.jpg",
+  "/about-images/reader.jpg",
 ];
 
 function Photos() {
@@ -21,14 +21,10 @@ function Photos() {
   }, []);
 
   return (
-    <div className='photo-rotator'>
-      <img
-        src={images[currentImg]}
-        alt="Gallery"
-        className='rotating-photo'
-      />
+    <div className="photo-rotator">
+      <img src={images[currentImg]} alt="Gallery" className="rotating-photo" />
     </div>
-  )
+  );
 }
 
-export default Photos
+export default Photos;
