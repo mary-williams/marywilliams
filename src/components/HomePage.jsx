@@ -1,4 +1,4 @@
-import ProfileImg from "../assets/profile.jpg";
+import ProfileImg from "src/assets/profile.JPG";
 import InfoBox from "./InfoBox.jsx";
 import MusicPlayer from "./MusicPlayer.jsx";
 import Photos from "./Photos.jsx";
