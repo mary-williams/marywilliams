@@ -49,7 +49,7 @@ function HomePage() {
       </div>
       <div className="right-col">
         <div className="profile">
-          <img src="public/profile.jpg" alt="My Picture!"/>
+          <img src="/profile.jpg" alt="My Picture!"/>
         </div>
         <div style={{ marginTop: "2rem" }}>
           <InfoBox size="large" header="Other">
