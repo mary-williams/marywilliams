@@ -1,0 +1,9 @@
+.nav-link:hover,
+.nav-link:focus {
+  color: rgb(240, 61, 172) !important;
+}
+
+.nav-link.active:hover,
+.nav-link.active:focus {
+  color: white !important;
+}
