@@ -47,16 +47,32 @@
   transition: background 0.2s;
 }
 
-.email-link:hover {
-  background: #e5e5e5;
-}
-
 .info-boxes {
   display: flex;
   gap: 2rem;
   flex-wrap: wrap;
   justify-content: center;
   margin-top: 2rem;
+}
+
+.contact-container 
+.info-boxes{
+  transition: box-shadow 0.2s, transform 0.2s;
+}
+
+.info-boxes .info-box {
+  width: 80%;
+  max-width: 350px;
+  min-width: 200px;
+  margin-left: auto;
+  margin-right: auto;
+  box-sizing: border-box;
+}
+
+.contact-container
+.info-box:hover {
+  box-shadow: 0 4px 16px rgba(240, 61, 172, 0.15);
+  transform: translateY(-2px) scale(1.02);
 }
 
 .contact-link {

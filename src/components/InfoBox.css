@@ -10,6 +10,14 @@
   word-break: break-word;
 }
 
+@keyframes fadeUp {
+  from { opacity: 0; transform: translateY(30px);}
+  to { opacity: 1; transform: translateY(0);}
+}
+.info-box {
+  animation: fadeUp 1s ease;
+}
+
 .info-box-header {
   font-size: 1.2rem;
   color: #959595;

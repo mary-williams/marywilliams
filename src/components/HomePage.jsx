@@ -1,3 +1,4 @@
+import { useState, useEffect } from "react";
 import InfoBox from "./InfoBox.jsx";
 import MusicPlayer from "./MusicPlayer.jsx";
 import Photos from "./Photos.jsx";
@@ -13,48 +14,99 @@ const aboutMe5 =
 const aboutMe6 =
   "de kjfe erjfb erifhiwqjnci fuwqehrfcjsvjweriuv wivbwiuhviuewi de kjfe erjfb erifhiwqjnci fuwqehrfcjsvjweriuv wivbwiuhviuewi de kjfe erjfb erifhiwqjnci fuwqehrfcjsvjweriuv wivbwiuhviuewifjbrbverbvib ufvfrbviwbcvwr wuf wifwefhiewufhweijfer fugfieurfierufpiuergieru fir v";
 
+function useIsMobile() {
+  const [isMobile, setIsMobile] = useState(window.innerWidth < 600);
+  useEffect(() => {
+    const handleResize = () => setIsMobile(window.innerWidth < 600);
+    window.addEventListener("resize", handleResize);
+    return () => window.removeEventListener("resize", handleResize);
+  }, []);
+  return isMobile;
+}
+
 function HomePage() {
-  return (
-    <div className="left-right-row">
-      <div className="left-col">
-        <div className="header-row">
-          <h1>
-            Hi, I'm Mary{" "}
-            <span className="subtitle">an aspiring Software Developer</span>
-          </h1>
-          <div className="title-underline"></div>
-        </div>
-        <div className="info-boxes">
-          <InfoBox size="small" header="Me">
-            {aboutMe1}
-          </InfoBox>
-          <InfoBox size="medium" header="In the Future">
-            {aboutMe3}
-          </InfoBox>
-          <InfoBox size="large" header='My "Why"'>
-            {aboutMe4}
-          </InfoBox>
-        </div>
-        <div className="bottom-row">
-          <Photos />
-          <MusicPlayer />
-          <div
-            style={{ display: "flex", flexDirection: "column", gap: "2rem" }}
-          >
-            <InfoBox size="xlarge" header="Hobbies">
-              {aboutMe5}
-            </InfoBox>
-          </div>
-        </div>
+  const isMobile = useIsMobile();
+
+  return isMobile ? (
+    // Mobile layout
+    <div className="container-phone py-4">
+      <div className="mb-4" style={{ textAlign: "center", maxWidth: "400px" }}>
+        <img
+          src="/profile.jpg"
+          alt="My Picture!"
+          className="img-fluid rounded-4"
+        />
       </div>
-      <div className="right-col">
-        <div className="profile">
-          <img src="/profile.jpg" alt="My Picture!"/>
-        </div>
-        <div style={{ marginTop: "2rem" }}>
-          <InfoBox size="large" header="Other">
-            {aboutMe6}
-          </InfoBox>
+      <h1>Hi, I'm Mary </h1>
+      <h1 className="subtitle">an aspiring Software Developer</h1>
+      <div className="title-underline"></div>
+      <InfoBox size="large" header="Me">
+        {aboutMe1}
+      </InfoBox>
+      <InfoBox size="large" header="In the Future">
+        {aboutMe3}
+      </InfoBox>
+      <InfoBox size="large" header='My "Why"'>
+        {aboutMe4}
+      </InfoBox>
+      <InfoBox size="large" header="Hobbies">
+        {aboutMe5}
+      </InfoBox>
+      <MusicPlayer />
+      <Photos />
+    </div>
+  ) : (
+    // Desktop/laptop layout (your current layout)
+    <div className="container-fluid py-4">
+      <div className="row">
+        <div className="col-lg-12 col-12 mb-4">
+          <div className="mb-3">
+            <div className="title-row">
+              <div className="title-col">
+                <h1>
+                  Hi, I'm Mary{" "}
+                  <span className="subtitle">
+                    an aspiring Software Developer
+                  </span>
+                </h1>
+                <div
+                  className="title-underline"
+                  style={{ marginBottom: "2rem" }}
+                ></div>
+                <div className="infobox-row">
+                  <InfoBox size="small" header="Me">
+                    {aboutMe1}
+                  </InfoBox>
+                  <InfoBox size="medium" header="In the Future">
+                    {aboutMe3}
+                  </InfoBox>
+                  <InfoBox size="large" header='My "Why"'>
+                    {aboutMe4}
+                  </InfoBox>
+                </div>
+                <div className="row g-3" style={{ marginTop: "0.5rem" }}>
+                  <div className="col-md-4 col-12">
+                    <Photos />
+                  </div>
+                  <div className="col-md-4 col-12">
+                    <MusicPlayer />
+                  </div>
+                  <div className="col-md-4 col-12">
+                    <InfoBox size="xlarge" header="Hobbies">
+                      {aboutMe5}
+                    </InfoBox>
+                  </div>
+                </div>
+              </div>
+              <div className="profile">
+                <img
+                  src="/profile.jpg"
+                  alt="My Picture!"
+                  className="img-fluid rounded-4"
+                />
+              </div>
+            </div>
+          </div>
         </div>
       </div>
     </div>

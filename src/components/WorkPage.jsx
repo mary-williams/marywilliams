@@ -1,4 +1,5 @@
 import "./WorkPage.css";
+import 'bootstrap/dist/css/bootstrap.min.css';
 
 const experiences = [
   {
@@ -43,13 +44,13 @@ const projects = [
     title: "Personal Website",
     description:
       "A responsive React portfolio site to showcase my work and contact info.",
-    tech: ["React", "CSS", "Javascript"],
+    tech: ["React", "Bootstrap", "Firebase"],
     link: "https://github.com/mary-williams/marywilliams",
   },
   {
     title: "NASA APOD Slack Bot",
     description:
-      'Creates a Slack bot that will send NASA\'s "A Picture Of the Day" everyday',
+      'Creates a Slack bot that will send NASA\'s "A Picture Of the Day" everyday.',
     tech: ["Python", "AWS", "API"],
     link: "https://github.com/mary-williams/nasa_apod",
   },
@@ -62,7 +63,7 @@ const projects = [
   },
   {
     title: "Book App",
-    description: "An improved social book, taking inspiration from Goodreads",
+    description: "A social book app, an improved version of Goodreads, with added features and modern design.",
     tech: ["Figma"],
     link: "https://github.com/mary-williams",
   },
@@ -108,63 +109,63 @@ const involvement = [
 
 function WorkPage() {
   return (
-    <div className="info-box work-container">
-      <section className="resume-section">
-        <h3>Experience</h3>
-        {experiences.map((exp, idx) => (
-          <div className="info-box" key={idx}>
-            <div className="resume-title">
-              {exp.role} @ {exp.company}
-            </div>
-            <div className="resume-date">{exp.date}</div>
-            <div className="resume-desc">{exp.description}</div>
-          </div>
-        ))}
-      </section>
-      <section className="resume-section">
-        <h3>Projects</h3>
-        <div className="projects-grid">
-          {projects.map((proj, idx) => (
-            <a
-              href={proj.link}
-              target="_blank"
-              rel="noopener noreferrer"
-              className="info-box project-link"
-              key={idx}
-            >
-              <div className="resume-title">{proj.title}</div>
-              <div className="resume-desc">{proj.description}</div>
-              <div className="resume-tech">
-                {proj.tech &&
-                  proj.tech.map((t, i) => (
-                    <span className="tech-tag" key={i}>
-                      {t}
-                    </span>
-                  ))}
+    <div className="container py-4">
+      <div className="row mb-4">
+        <div className="col-12 col-lg-8 mx-auto resume-section info-box">
+          <h3>Experience</h3>
+          {experiences.map((exp, idx) => (
+            <div className="experiences mb-3" key={idx}>
+              <div className="resume-title">
+                {exp.role} @ {exp.company}
               </div>
-              {proj.link && (
+              <div className="resume-date">{exp.date}</div>
+              <div className="resume-desc">{exp.description}</div>
+            </div>
+          ))}
+        </div>
+      </div>
+      <div className="row mb-4">
+        <div className="col-12 col-lg-8 mx-auto resume-section info-box">
+          <h3>Projects</h3>
+          <div className="row">
+            {projects.map((proj, idx) => (
+              <div className="col-12 col-md-6 mb-4" key={idx}>
                 <a
                   href={proj.link}
                   target="_blank"
                   rel="noopener noreferrer"
-                ></a>
-              )}
-            </a>
+                  className="project-link d-block h-100"
+                >
+                  <div className="resume-title">{proj.title}</div>
+                  <div className="resume-tech">
+                    {proj.tech &&
+                      proj.tech.map((t, i) => (
+                        <span className="tech-tag" key={i}>
+                          {t}
+                        </span>
+                      ))}
+                  </div>
+                  <div className="resume-desc">{proj.description}</div>
+                </a>
+              </div>
+            ))}
+          </div>
+        </div>
+      </div>
+      <div className="row mb-4">
+        <div className="col-12 col-lg-8 mx-auto resume-section info-box">
+          <h3>Community Involvement & Leadership</h3>
+          {involvement.map((c, idx) => (
+            <div className="involvement mb-3" key={idx}>
+              <div className="resume-title">
+                {c.org} — {c.role}
+              </div>
+              <div className="resume-date">{c.date}</div>
+              <div className="resume-desc">{c.description}</div>
+            </div>
           ))}
         </div>
-      </section>
-      <section className="resume-section">
-        <h3>Community Involvement & Leadership</h3>
-        {involvement.map((c, idx) => (
-          <div className="info-box" key={idx}>
-            <div className="resume-title">
-              {c.org} — {c.role}
-            </div>
-            <div className="resume-date">{c.date}</div>
-            <div className="resume-desc">{c.description}</div>
-          </div>
-        ))}
-      </section>
+      </div>
     </div>
   );
 }
