@@ -56,7 +56,7 @@ function HomePage() {
       <Photos />
     </div>
   ) : (
-    // Desktop/laptop layout (your current layout)
+    // Desktop/laptop layout
     <div className="container-fluid py-4">
       <div className="row">
         <div className="col-lg-12 col-12 mb-4">

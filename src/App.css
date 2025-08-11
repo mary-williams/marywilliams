@@ -16,7 +16,7 @@ body, #root {
 }
 
 .container-phone .subtitle {
-  margin-top: -1.5rem; /* or 0, or a negative value to pull it closer */
+  margin-top: -1.5rem; 
 }
 
 .container-phone h1 {

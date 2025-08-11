@@ -10,16 +10,16 @@ const experiences = [
       <ul>
         <li>
           Reduced manual processing time by 60% by developing a Python script to
-          automate writing of log files.
+          automate writing of log files
         </li>
         <li>
           Enhanced existing automation scripts to streamline programming and
           testing of client Evaluation Kits (EVKs), improving workflow
-          efficiency.
+          efficiency
         </li>
         <li>
           Assembled and programmed 150 EVKs for clients, ensuring high quality
-          and timely fulfillment.
+          and timely fulfillment
         </li>
       </ul>
     ),
@@ -32,7 +32,7 @@ const experiences = [
       <ul>
         <li>
           Manage resident concerns, check-ins, mail, and front desk operations
-          to ensure an organized and responsive environment.
+          to ensure an organized and welcoming environment
         </li>
       </ul>
     ),
@@ -78,11 +78,11 @@ const involvement = [
       <ul>
         <li>
           Engage in mentorship and outreach, helping hundreds of high schoolers
-          explore computer science curriculum through workshops and events.
+          explore computer science curriculum through workshops and events
         </li>
         <li>
           Foster long-term relationships, offering ongoing academic and personal
-          support to help mentees thrive.
+          support to help mentees thrive
         </li>
       </ul>
     ),
@@ -99,7 +99,7 @@ const involvement = [
         </li>
         <li>
           Assist with navigating scholarship and careers and reviewing
-          applications in order to build students’ confidence and readiness for
+          applications in order to build students confidence and readiness for
           higher education
         </li>
       </ul>
