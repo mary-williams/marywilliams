@@ -2,6 +2,7 @@ import { useState, useEffect } from "react";
 import InfoBox from "./InfoBox.jsx";
 import MusicPlayer from "./MusicPlayer.jsx";
 import Photos from "./Photos.jsx";
+import TypingHeading from "./TypingHeading.jsx";
 
 const aboutMe1 =
   "I currently attend the University of Texas at Austin as a Computer Science student. I anticipate to graduate May 2027!";
@@ -40,7 +41,7 @@ function HomePage() {
           className="img-fluid rounded-4"
         />
       </div>
-      <h1>Hi, I'm Mary </h1>
+      <TypingHeading text="Hi, I'm Mary" className="mb-3" speed={80} />{" "}
       <h1 className="subtitle">an aspiring Software Developer</h1>
       <div className="title-underline"></div>
       <InfoBox size="large" header="Me">
@@ -62,97 +63,58 @@ function HomePage() {
     // Desktop/laptop layout
     <div className="container-fluid py-4">
       <div className="row">
-        <div className="col-lg-8 col">
-          <h1>
-            Hi, I'm Mary{" "}
-            <span className="subtitle">an aspiring Software Developer</span>
-          </h1>
-          <div
-            className="title-underline"
-            style={{ marginBottom: "2rem" }}
-          ></div>
-          <div className="row mb-2">
-            <div className="col-md-4 col-12">
-              <InfoBox size="medium" header="Me">
-                {aboutMe1}
-              </InfoBox>
-            </div>
-            <div className="col-md-8 col-12">
-              <InfoBox size="xlarge" header='My "Why"'>
-                {aboutMe4}
-              </InfoBox>
-            </div>
-          </div>
-          <div className="row g-3" style={{ marginTop: "0.5rem" }}>
-            <div className="col-md-4 col-12">
-              <Photos />
-            </div>
-            <div className="col-md-4 col-12">
-              <InfoBox size="medium" header="In the Future">
-                {aboutMe3}
-              </InfoBox>
-            </div>
-            <div className="col-md-3 col-12">
-              <MusicPlayer />
-            </div>
-          </div>
+        {/* Main glassy InfoBox with all about me sections */}
+        <div className="col-lg-8 col-12">
+          <InfoBox size="xlarge">
+            <TypingHeading text="Hi, I'm Mary" className="mb-3" speed={150} />{" "}
+            <div className="title-underline"></div>
+            <h2 className="subtitle">an aspiring Software Developer</h2>
+            <div className="mb-3">{aboutMe1}</div>
+            <div className="mb-3">{aboutMe3}</div>
+            <div className="mb-3">{aboutMe4}</div>
+            <div>{aboutMe5}</div>
+            <div className="mb-3">{aboutMe4}</div>
+            <div className="mb-3">{aboutMe4}</div>
+            <div className="mb-3">{aboutMe4}</div>
+            <div className="mb-3">{aboutMe4}</div>
+            <div className="mb-3">{aboutMe4}</div>
+          </InfoBox>
         </div>
+        {/* Sticky glassy side card */}
         <div className="col-lg-4 col-12">
-          <div className="profile mb-4">
-            <img
-              src="/profile.jpg"
-              alt="My Picture!"
-              className="img-fluid rounded-4 w-60 mx-auto d-block"
-            />
-          </div>
-          <div className="col-md-10 col-12">
-            <InfoBox size="large" header="Hobbies">
-              {aboutMe5}
+          <div className="sticky-top" style={{ top: "4rem" }}>
+            <InfoBox
+              size="large"
+              className="d-flex flex-column align-items-center justify-content-center"
+              style={{ textAlign: "center" }}
+            >
+              <img
+                src="/profile.jpg"
+                alt="My Picture!"
+                className="img-fluid rounded-4 w-100 mb-4"
+              />
+              <MusicPlayer className="w-100 mb-4" />
+              <InfoBox size="small" className="w-100">
+                <div>
+                  <div>
+                    <strong>Email:</strong>
+                    <br />
+                    <a
+                      href="mailto:marywilliams@utexas.edu"
+                      style={{ color: "#f03dac" }}
+                    >
+                      marywilliams@utexas.edu
+                    </a>
+                  </div>
+                  <div className="mt-2">
+                    <strong>Location:</strong>
+                    <br />
+                    Austin, TX
+                  </div>
+                </div>
+              </InfoBox>
             </InfoBox>
           </div>
-          {/*
-                <InfoBox size="large" header="Books I Like">
-                  <div
-                    style={{
-                      display: "flex",
-                      justifyContent: "center",
-                      gap: "1.5rem",
-                    }}
-                  >
-                    {books.map((book) => (
-                      <div
-                        key={book.title}
-                        style={{
-                          display: "flex",
-                          flexDirection: "column",
-                          alignItems: "center",
-                        }}
-                      >
-                        <img
-                          src={book.img}
-                          alt={book.title}
-                          style={{
-                            boxShadow: "0 2px 12px rgba(0,0,0,0.10)",
-                            width: "100px",
-                            height: "160px",
-                            objectFit: "cover",
-                            marginBottom: "0.5rem",
-                          }}
-                        />
-                        <div
-                          style={{
-                            marginBottom: "0.5rem",
-                            textAlign: "center",
-                            fontSize: "15px"
-                          }}
-                        >
-                          {book.title}
-                        </div>
-                      </div>
-                    ))}
-                  </div>
-                  </InfoBox>
-                  */}
         </div>
       </div>
     </div>

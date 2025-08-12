@@ -31,52 +31,20 @@ body,
 }
 
 .container-fluid {
-  padding-left: 7rem;
-  padding-right: 7rem;
+  padding-left: 15rem;
+  padding-right: 15rem;
 }
 
 .title-underline {
   height: 1.5px;
   background: rgb(225, 222, 223);
-  width: 72%;
+  width: 33%;
   border-radius: 2px;
+  margin-top: -10px;
 }
 
 .app-content {
   flex: 1;
-}
-
-.title-row {
-  display: flex;
-  align-items: flex-start;
-  justify-content: space-between;
-  gap: 2rem;
-}
-
-.title-col {
-  flex: 1;
-}
-
-.infobox-row {
-  display: flex;
-  gap: 2rem;
-  margin-top: 1rem;
-}
-
-.profile {
-  width: 35vw;
-  max-width: 400px;
-  min-width: 100px;
-  display: flex;
-  align-items: flex-start;
-}
-
-.profile img {
-  width: 60vw;
-  max-width: 500px;
-  min-width: 250px;
-  border-radius: 16px;
-  margin-bottom: 20px;
 }
 
 .subtitle {
