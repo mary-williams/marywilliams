@@ -11,7 +11,6 @@ import "./ContactPage.css";
 
 const pinkColor = "rgb(240, 61, 172)";
 const darkpinkColor = "rgb(219, 46, 153)";
-const grayColor = "rgb(106, 106, 106)";
 const aboutMeArr = [
   <>
     🤘 I currently attend the University of Texas at Austin as a Computer
