@@ -10,12 +10,6 @@
   box-sizing: border-box;
 }
 
-.contact-left,
-.contact-right {
-  flex: 1 1 0;
-  min-width: 200px;
-}
-
 .title {
   text-align: center;
   margin-bottom: 1.5rem;
@@ -25,26 +19,6 @@
   text-align: center;
   color: #666;
   margin-bottom: 2rem;
-}
-
-.email {
-  display: flex;
-  justify-content: center;
-  margin-bottom: 1rem;
-}
-
-.email-link {
-  background: #fcfcfc;
-  color: rgb(240, 61, 172);
-  border: none;
-  border-radius: 2rem;
-  padding: 5px 5px;
-  font-size: 1rem;
-  font-weight: 500;
-  cursor: pointer;
-  text-decoration: none;
-  display: inline-block;
-  transition: background 0.2s;
 }
 
 .info-boxes {
@@ -58,15 +32,6 @@
 .contact-container 
 .info-boxes{
   transition: box-shadow 0.2s, transform 0.2s;
-}
-
-.info-boxes .info-box {
-  width: 80%;
-  max-width: 350px;
-  min-width: 200px;
-  margin-left: auto;
-  margin-right: auto;
-  box-sizing: border-box;
 }
 
 .contact-container

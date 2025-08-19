@@ -1,34 +1,34 @@
 .music-player {
-  /* Inherits .info-box styles */
-  width: 225px;
-  margin-top: 0px;
+  margin-bottom: 1rem;
 }
 
 .music-track {
   display: flex;
-  flex-direction: column;
   align-items: center;
   gap: 0.5rem;
 }
 
+.title-artist-buttons {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+}
+
 .music-album {
-  width: 175px;
-  height: 175px;
-  object-fit: cover;
-  margin-top: 10px;
+  width: 75px;
+  height: 75px;
   box-shadow: 3px 3px 17px rgba(47, 46, 47, 0.07);
 }
 
 .music-title {
-  font-weight: 400;
   color: #282828;
-  margin-bottom: 0;
+  font-size: medium;
 }
 
-.music-artist{
-    font-weight: 300;
-    color: #282828;
-    margin-top: 0;
+.music-artist {
+  font-weight: 300;
+  color: #282828;
+  font-size: medium;
 }
 
 .music-controls {
@@ -41,9 +41,9 @@
   background: none;
   border: none;
   border-radius: 0;
-  padding: 0.5rem;
-  font-size: 1.2rem;
-  color: rgb(165, 165, 165); 
+  padding: 0.3rem;
+  font-size: 1rem;
+  color: rgb(165, 165, 165);
   cursor: pointer;
   transition: color 0.2s;
 }
