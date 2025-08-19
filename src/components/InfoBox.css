@@ -1,26 +1,28 @@
 .info-box {
   background: rgba(255, 255, 255, 0.25); /* semi-transparent */
   border-radius: 1.5rem;
-  padding: 1.0rem;
+  padding: 1rem;
   padding-top: 0.7rem;
   padding-bottom: 0.7rem;
   color: #222;
-  box-shadow: 0 3px 10px rgba(0,0,0,0.15);
+  box-shadow: 0 3px 10px rgba(0, 0, 0, 0.15);
   font-size: 18px;
   word-break: break-word;
   backdrop-filter: blur(4px); /* glass effect */
   -webkit-backdrop-filter: blur(4px); /* Safari support */
-  border: 1px solid rgba(255,255,255,0.35); /* subtle border */
+  border: 1px solid rgba(255, 255, 255, 0.35); /* subtle border */
   animation: fadeUp 1s ease;
 }
 
 @keyframes fadeUp {
-  from { opacity: 0; transform: translateY(30px);}
-  to { opacity: 1; transform: translateY(0);}
-}
-
-.info-box {
-  animation: fadeUp 1s ease;
+  from {
+    opacity: 0;
+    transform: translateY(30px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
 }
 
 .info-box-header {
@@ -30,21 +32,19 @@
 }
 
 .info-box.small {
-  max-width: 260px;
-  min-width: 250px;
+  max-width: none;
+  min-width: 0;
+  width: fit-content;
 }
 
 .info-box.medium {
   max-width: 360px;
-  min-width: 220px;
 }
 
 .info-box.large {
   max-width: 450px;
-  min-width: 260px;
 }
 
 .info-box.xlarge {
   max-width: 1000px;
-  min-width: 300px;
 }

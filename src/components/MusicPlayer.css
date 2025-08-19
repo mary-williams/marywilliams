@@ -1,3 +1,6 @@
+.music-player {
+  margin-bottom: 1rem;
+}
 
 .music-track {
   display: flex;
@@ -25,7 +28,6 @@
 .music-artist {
   font-weight: 300;
   color: #282828;
-  margin-top: 0;
   font-size: medium;
 }
 
