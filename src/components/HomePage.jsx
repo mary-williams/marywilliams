@@ -101,7 +101,7 @@ function HomePage() {
                     <p style={{ fontSize: "17px" }}>
                       A website that gathers and displays unique indie websites
                       for users to explore. Sites range in theme from music
-                      discovery to reading place recommendations.{" "}
+                      discovery to reading place recommendations. {" "}
                     </p>
                   }
                 </InfoBox>
