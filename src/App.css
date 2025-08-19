@@ -11,11 +11,6 @@ body,
   flex-direction: column;
   background: url("/blogbg.jpeg");
   background-size: cover;
-
-  /*
-  background: url("/bg.jpeg") no-repeat center center fixed;
-  background-size: cover;
-  */
 }
 
 .title {
