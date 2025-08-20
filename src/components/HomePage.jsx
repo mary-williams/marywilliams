@@ -94,13 +94,13 @@ function HomePage() {
               time equally across these{" "}
             </i>
             <div className="row g-3 mt-1">
-              <div className="col-md-6 col-12" style={{color: pinkColor}}>
-                <InfoBox size="medium" header="Site of Sites" >
-                    {
+              <div className="col-md-6 col-12" style={{ color: pinkColor }}>
+                <InfoBox size="medium" header="Site of Sites">
+                  {
                     <p style={{ fontSize: "17px" }}>
                       A website that gathers and displays unique indie websites
                       for users to explore. Sites range in theme from music
-                      discovery to reading place recommendations. {" "}
+                      discovery to reading place recommendations.{" "}
                     </p>
                   }
                 </InfoBox>
@@ -204,7 +204,9 @@ function HomePage() {
                   marginTop: "1rem",
                 }}
               >
-                <h1 style={{fontSize: "30px", fontWeight: "normal"}}>Mary Williams</h1>
+                <h1 style={{ fontSize: "30px", fontWeight: "normal" }}>
+                  Mary Williams
+                </h1>
 
                 <div
                   style={{
