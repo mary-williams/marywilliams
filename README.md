@@ -1,2 +1,2 @@
 
-A personal website, still very much in the works
+A personal website that uses react.js, bootstrap, and firebase.
