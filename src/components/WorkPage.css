@@ -3,7 +3,7 @@
   padding-right: 2rem;
 }
 
-.resume{
+.resume {
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -17,7 +17,6 @@
 }
 
 .resume-section h3 {
-  color: rgb(240, 61, 172);
   margin-bottom: 1rem;
 }
 
@@ -43,9 +42,8 @@
 }
 
 .project-link:hover {
-  box-shadow: 0 4px 16px rgba(240, 61, 172, 0.15);
+  box-shadow: 0 4px 16px rgba(176, 35, 241, 0.224);
   transform: translateY(-2px) scale(1.02);
-  background: rgba(255, 255, 255, 0.28);
 }
 
 .resume-title {
@@ -72,7 +70,7 @@
 }
 
 .tech-tag {
-  background: rgb(248, 236, 244);
+  background: rgba(228, 200, 248, 0.93);
   color: #333;
   border-radius: 1rem;
   padding: 0.2rem 0.8rem;

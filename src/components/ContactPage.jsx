@@ -2,6 +2,7 @@ import "./ContactPage.css";
 import InfoBox from "./InfoBox.jsx";
 import { FiExternalLink } from "react-icons/fi";
 import "bootstrap/dist/css/bootstrap.min.css";
+import { lightAccent } from "../assets/colors";
 
 function ContactPage() {
   return (
@@ -23,7 +24,7 @@ function ContactPage() {
                   className="contact-link"
                 >
                   marywilliams@utexas.edu
-                  <FiExternalLink className="external-icon" size={18} />
+                  <FiExternalLink style={{color: lightAccent}} size={18} />
                 </a>
               </InfoBox>
               <InfoBox size="medium" className="w-100">
@@ -34,7 +35,7 @@ function ContactPage() {
                   className="contact-link"
                 >
                   LinkedIn
-                  <FiExternalLink className="external-icon" size={18} />
+                  <FiExternalLink style={{color: lightAccent}} size={18} />
                 </a>
               </InfoBox>
               <InfoBox size="medium" className="w-100">
@@ -45,7 +46,7 @@ function ContactPage() {
                   className="contact-link"
                 >
                   Github
-                  <FiExternalLink className="external-icon" size={18} />
+                  <FiExternalLink style={{color: lightAccent}} size={18} />
                 </a>
               </InfoBox>
               <InfoBox size="medium" className="w-100">
@@ -55,7 +56,7 @@ function ContactPage() {
                   className="contact-link"
                 >
                   Download Resume
-                  <FiExternalLink className="external-icon" size={18} />
+                  <FiExternalLink style={{color: lightAccent}} size={18} />
                 </a>
               </InfoBox>
             </div>

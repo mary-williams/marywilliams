@@ -1,5 +1,6 @@
 import { Link, useLocation } from "react-router-dom";
 import "./Navbar.css";
+import { accent } from "../assets/colors";
 
 function Navbar() {
   const location = useLocation();
@@ -11,9 +12,9 @@ function Navbar() {
         id="pillNav2"
         role="tablist"
         style={{
-          "--bs-nav-link-color": "rgb(219, 46, 153)",
+          "--bs-nav-link-color": accent,
           "--bs-nav-pills-link-active-color": "white",
-          "--bs-nav-pills-link-active-bg": "rgb(219, 46, 153)",
+          "--bs-nav-pills-link-active-bg": accent,
           background: "rgba(255,255,255,0.18)",
           display: "inline-flex",
           justifyContent: "center",

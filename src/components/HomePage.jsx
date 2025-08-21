@@ -8,9 +8,8 @@ import { faEnvelope } from "@fortawesome/free-regular-svg-icons";
 import { FiMapPin } from "react-icons/fi";
 import { FiExternalLink } from "react-icons/fi";
 import "./ContactPage.css";
+import { black, lightAccent, accent } from "../assets/colors";
 
-const pinkColor = "rgb(240, 61, 172)";
-const darkpinkColor = "rgb(219, 46, 153)";
 const aboutMeArr = [
   <>
     🤘 I currently attend the University of Texas at Austin as a Computer
@@ -80,21 +79,19 @@ function HomePage() {
               speed={150}
             />{" "}
             <div className="title-underline"></div>
-            <h5 style={{ color: darkpinkColor }}>About Me</h5>
+            <h5 style={{ color: accent }}>About Me</h5>
             <div className="mb-3">{aboutMeArr[0]}</div>
             <div className="mb-3">{aboutMeArr[1]}</div>
             <div className="mb-3">{aboutMeArr[2]}</div>
             <div className="mb-4">{aboutMeArr[3]}</div>
-            <h5 style={{ color: darkpinkColor }}>
-              What I'm Currently Working On
-            </h5>
+            <h5 style={{ color: accent }}>What I'm Currently Working On</h5>
             <i>
               {" "}
-              I get excited about new projects and often find myself spending
-              time equally across these{" "}
+              I get excited about new projects and spend my time
+              across these: {" "}
             </i>
-            <div className="row g-3 mt-1">
-              <div className="col-md-6 col-12" style={{ color: pinkColor }}>
+            <div className="row g-3 mt-1 current-work">
+              <div className="col-md-6 col-12" style={{ color: "black" }}>
                 <InfoBox size="medium" header="Site of Sites">
                   {
                     <p style={{ fontSize: "17px" }}>
@@ -142,7 +139,7 @@ function HomePage() {
               </div>
             </div>
             <div style={{ marginTop: "2rem" }}>
-              <h5 style={{ color: darkpinkColor }}>Previous Projects</h5>
+              <h5 style={{ color: accent }}>Previous Projects</h5>
               <div
                 className="hover-effect"
                 style={{ display: "flex", gap: "1rem", marginTop: "1rem" }}
@@ -159,7 +156,7 @@ function HomePage() {
                     className="contact-link"
                   >
                     Check out my github
-                    <FiExternalLink style={{ color: pinkColor }} size={18} />
+                    <FiExternalLink style={{ color: accent }} size={18} />
                   </a>
                 </InfoBox>
                 <InfoBox
@@ -174,7 +171,11 @@ function HomePage() {
                     className="contact-link"
                   >
                     Or my resume
-                    <FiExternalLink className="external-icon" size={18} />
+                    <FiExternalLink
+                      style={{ color: accent }}
+                      className="external-icon"
+                      size={18}
+                    />
                   </a>
                 </InfoBox>
               </div>
@@ -204,19 +205,25 @@ function HomePage() {
                   marginTop: "1rem",
                 }}
               >
-                <h1 style={{ fontSize: "30px", fontWeight: "normal" }}>
+                <h1
+                  style={{
+                    fontSize: "30px",
+                    fontWeight: "normal",
+                    color: "rgb(88, 87, 87)",
+                  }}
+                >
                   Mary Williams
                 </h1>
 
                 <div
                   style={{
-                    background: "rgba(255,255,255,0.18)",
+                    background: "rgba(255, 255, 255, 0.25)",
                     borderRadius: "1rem",
-                    backdropFilter: "blur(12px)",
+                    backdropFilter: "blur(19px)",
                     WebkitBackdropFilter: "blur(12px)",
                     boxShadow: "0 2px 8px rgba(0, 0, 0, 0.15)",
-                    padding: "0.5rem",
-                    maxWidth: "190px",
+                    padding: "0.2rem",
+                    maxWidth: "170px",
                     width: "100%",
                     margin: "0 auto",
                     textAlign: "center",
@@ -227,7 +234,8 @@ function HomePage() {
                       fontSize: "16px",
                       textAlign: "center",
                       fontWeight: "normal",
-                      paddingTop: "0.5rem",
+                      paddingTop: "0.3rem",
+                      color: accent,
                     }}
                   >
                     Software Developer
@@ -258,7 +266,7 @@ function HomePage() {
                   >
                     <FontAwesomeIcon
                       icon={faEnvelope}
-                      style={{ color: darkpinkColor, fontSize: "20px" }}
+                      style={{ color: accent, fontSize: "20px" }}
                     />
                   </InfoBox>
                   <div className="email ms-2" style={{ margin: "0 0 10px 0" }}>
@@ -274,7 +282,7 @@ function HomePage() {
                     <br />
                     <a
                       href="mailto:marywilliams@utexas.edu"
-                      style={{ color: darkpinkColor, textDecoration: "none" }}
+                      style={{ color: black, textDecoration: "none" }}
                     >
                       marywilliams@utexas.edu
                     </a>
@@ -286,9 +294,7 @@ function HomePage() {
                     className="d-flex align-items-center justify-content-center"
                     style={{ maxWidth: "32px", height: "32px" }}
                   >
-                    <FiMapPin
-                      style={{ color: darkpinkColor, fontSize: "22px" }}
-                    />
+                    <FiMapPin style={{ color: accent, fontSize: "22px" }} />
                   </InfoBox>
                   <div
                     className="location ms-2"
@@ -304,7 +310,7 @@ function HomePage() {
                       LOCATION
                     </span>
                     <br />
-                    Austin, TX
+                    <a style={{ color: black }}>Austin, TX</a>
                   </div>
                 </div>
               </div>

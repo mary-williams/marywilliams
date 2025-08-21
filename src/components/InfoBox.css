@@ -1,5 +1,5 @@
 .info-box {
-  background: rgba(255, 255, 255, 0.25); /* semi-transparent */
+  background: rgba(255, 255, 255, 0.25);
   border-radius: 1.5rem;
   padding: 1rem;
   padding-top: 0.7rem;
@@ -10,7 +10,7 @@
   word-break: break-word;
   backdrop-filter: blur(4px); /* glass effect */
   -webkit-backdrop-filter: blur(4px); /* Safari support */
-  border: 1px solid rgba(255, 255, 255, 0.35); /* subtle border */
+  border: 1px solid rgba(255, 255, 255, 0.35);
   animation: fadeUp 1s ease;
 }
 
@@ -27,8 +27,9 @@
 
 .info-box-header {
   font-size: 1.3rem;
-  color: #959595;
+  color: rgb(130, 129, 129);
   letter-spacing: 0.02rem;
+  font-weight: 400;
 }
 
 .info-box.small {

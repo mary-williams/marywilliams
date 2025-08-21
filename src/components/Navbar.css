@@ -1,6 +1,6 @@
 .nav-link:hover,
 .nav-link:focus {
-  color: rgb(240, 61, 172) !important;
+  color: rgba(210, 156, 248, 0.93) !important;
 }
 
 .nav-link.active:hover,

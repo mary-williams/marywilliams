@@ -1,5 +1,6 @@
 import "./WorkPage.css";
 import 'bootstrap/dist/css/bootstrap.min.css';
+import { accent } from "../assets/colors";
 
 const experiences = [
   {
@@ -43,7 +44,7 @@ const projects = [
   {
     title: "Personal Website",
     description:
-      "A responsive React portfolio site to showcase my work and contact info.",
+      "A responsive React portfolio site to showcase my work and contact info. Your here now!",
     tech: ["React", "Bootstrap", "Firebase"],
     link: "https://github.com/mary-williams/marywilliams",
   },
@@ -112,7 +113,7 @@ function WorkPage() {
     <div className="container py-4">
       <div className="row mb-4">
         <div className="col-12 col-lg-8 mx-auto resume-section info-box">
-          <h3>Experience</h3>
+          <h3 style ={{color: accent}}>Experience</h3>
           {experiences.map((exp, idx) => (
             <div className="experiences mb-3" key={idx}>
               <div className="resume-title">
@@ -126,7 +127,7 @@ function WorkPage() {
       </div>
       <div className="row mb-4">
         <div className="col-12 col-lg-8 mx-auto resume-section info-box">
-          <h3>Projects</h3>
+          <h3 style ={{color: accent}}>Projects</h3>
           <div className="row">
             {projects.map((proj, idx) => (
               <div className="col-12 col-md-6 mb-4" key={idx}>
@@ -154,7 +155,7 @@ function WorkPage() {
       </div>
       <div className="row mb-4">
         <div className="col-12 col-lg-8 mx-auto resume-section info-box">
-          <h3>Community Involvement & Leadership</h3>
+          <h3 style ={{color: accent}}>Community Involvement & Leadership</h3>
           {involvement.map((c, idx) => (
             <div className="involvement mb-3" key={idx}>
               <div className="resume-title">

@@ -36,7 +36,7 @@
 
 .contact-container
 .info-box:hover {
-  box-shadow: 0 4px 16px rgba(240, 61, 172, 0.15);
+  box-shadow: 0 4px 16px rgba(176, 35, 241, 0.224);
   transform: translateY(-2px) scale(1.02);
 }
 
@@ -51,6 +51,3 @@
   width: 100%;
 }
 
-.external-icon {
-  color: rgb(240, 61, 172);
-}
