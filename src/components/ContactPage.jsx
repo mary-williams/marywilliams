@@ -24,7 +24,7 @@ function ContactPage() {
                   className="contact-link"
                 >
                   marywilliams@utexas.edu
-                  <FiExternalLink style={{color: lightAccent}} size={18} />
+                  <FiExternalLink style={{ color: lightAccent }} size={18} />
                 </a>
               </InfoBox>
               <InfoBox size="medium" className="w-100">
@@ -35,7 +35,7 @@ function ContactPage() {
                   className="contact-link"
                 >
                   LinkedIn
-                  <FiExternalLink style={{color: lightAccent}} size={18} />
+                  <FiExternalLink style={{ color: lightAccent }} size={18} />
                 </a>
               </InfoBox>
               <InfoBox size="medium" className="w-100">
@@ -46,17 +46,17 @@ function ContactPage() {
                   className="contact-link"
                 >
                   Github
-                  <FiExternalLink style={{color: lightAccent}} size={18} />
+                  <FiExternalLink style={{ color: lightAccent }} size={18} />
                 </a>
               </InfoBox>
               <InfoBox size="medium" className="w-100">
                 <a
-                  href="/Mary_Williams_Resume.pdf"
+                  href="/Mary Williams Resume.pdf"
                   download
                   className="contact-link"
                 >
                   Download Resume
-                  <FiExternalLink style={{color: lightAccent}} size={18} />
+                  <FiExternalLink style={{ color: lightAccent }} size={18} />
                 </a>
               </InfoBox>
             </div>
