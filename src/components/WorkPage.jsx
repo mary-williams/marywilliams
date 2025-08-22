@@ -1,5 +1,5 @@
 import "./WorkPage.css";
-import 'bootstrap/dist/css/bootstrap.min.css';
+import "bootstrap/dist/css/bootstrap.min.css";
 import { accent } from "../assets/colors";
 
 const experiences = [
@@ -64,9 +64,10 @@ const projects = [
   },
   {
     title: "Book App",
-    description: "A social book app, an improved version of Goodreads, with added features and modern design.",
+    description:
+      "A social book app, an improved version of Goodreads, with added features and modern design.",
     tech: ["Figma"],
-    link: "https://github.com/mary-williams",
+    link: null,
   },
 ];
 
@@ -113,7 +114,25 @@ function WorkPage() {
     <div className="container py-4">
       <div className="row mb-4">
         <div className="col-12 col-lg-8 mx-auto resume-section info-box">
-          <h3 style ={{color: accent}}>Experience</h3>
+          <h3 style={{ color: accent }}>Education</h3>
+          <div className="education mb-3">
+            <div className="resume-title">University of Texas at Austin — Bachelor of Science</div>
+            <div className="resume-date">May 2027</div>
+            <div className="resume-desc">
+              <ul>
+                <li> <b>Major</b>: Computer Science</li>
+                <li> <b>Minor</b>: Business</li>
+                <li>
+                  <b>Relevant Coursework</b>: Data Structures & Algorithms, Operating Systems, Computer Architecture, Software Engineering (in progress), Modern Web Applications (in progress)
+                </li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div className="row mb-4">
+        <div className="col-12 col-lg-8 mx-auto resume-section info-box">
+          <h3 style={{ color: accent }}>Experience</h3>
           {experiences.map((exp, idx) => (
             <div className="experiences mb-3" key={idx}>
               <div className="resume-title">
@@ -127,7 +146,7 @@ function WorkPage() {
       </div>
       <div className="row mb-4">
         <div className="col-12 col-lg-8 mx-auto resume-section info-box">
-          <h3 style ={{color: accent}}>Projects</h3>
+          <h3 style={{ color: accent }}>Projects</h3>
           <div className="row">
             {projects.map((proj, idx) => (
               <div className="col-12 col-md-6 mb-4" key={idx}>
@@ -155,7 +174,7 @@ function WorkPage() {
       </div>
       <div className="row mb-4">
         <div className="col-12 col-lg-8 mx-auto resume-section info-box">
-          <h3 style ={{color: accent}}>Community Involvement & Leadership</h3>
+          <h3 style={{ color: accent }}>Community Involvement & Leadership</h3>
           {involvement.map((c, idx) => (
             <div className="involvement mb-3" key={idx}>
               <div className="resume-title">

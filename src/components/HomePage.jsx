@@ -16,15 +16,10 @@ const aboutMeArr = [
     Science student. <br />I anticipate to graduate May 2027!
   </>,
   "🎓 After graduating, I aim to secure a role in a company where I can contribute to impactful projects, grow in a supportive, diverse community, and help shape the future of technology.",
-  "⚖️  I’m driven by the desire to inspire future generations of creatives and lead positive change through technology. I’m passionate about the ethical responsibilities of developers and am pursuing a public policy certificate to ensure that technology is developed with integrity and social good in mind.",
+  "⚖️  I’m driven by the desire to inspire future generations of creatives and lead positive change through technology. I’m passionate about the ethical responsibilities of developers and want to ensure that technology is developed with integrity and social good in mind.",
   "🌱 Whenever I have free time I like to read (typically fiction), take photos on my Fujifim XT4 or Olympus film camera, discover new music, explore new hobbies, and anything involving getting outside.",
 ];
 
-const books = [
-  { title: "The Little Prince", img: "/books/littleprince.jpeg" },
-  { title: "The Kite Runner", img: "/books/kiterunner.jpeg" },
-  { title: "Perks of Being a Wallflower", img: "/books/perkswallflower.jpeg" },
-];
 function useIsMobile() {
   const [isMobile, setIsMobile] = useState(window.innerWidth < 600);
   useEffect(() => {
